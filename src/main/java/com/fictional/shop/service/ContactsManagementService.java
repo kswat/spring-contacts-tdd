@@ -1,8 +1,9 @@
-package com.fictional.shop;
+package com.fictional.shop.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.fictional.shop.CustomerContactRepository;
 import com.fictional.shop.domain.CustomerContact;
 
 
