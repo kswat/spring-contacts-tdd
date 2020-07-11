@@ -12,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import com.fictional.shop.domain.CustomerContact;
 
 @SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)
-class ContactsManagementControllerIT {
+public class ContactsManagementControllerIT {
 
 	@Autowired
 	ContactsManagementController controller;
