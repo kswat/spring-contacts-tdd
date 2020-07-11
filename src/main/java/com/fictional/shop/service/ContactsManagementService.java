@@ -14,10 +14,15 @@ public class ContactsManagementService {
 	private CustomerContactRepository customerContactRepository;
 	
 	public CustomerContact add(CustomerContact aContact) {
-		
-		CustomerContact newContact = customerContactRepository.save(aContact);
-		
-		return newContact;	
+		if(validate(aContact)) {
+			CustomerContact newContact = customerContactRepository.save(aContact);		
+			return newContact;	
+		}
+		return null;
+	}
+
+	private boolean validate(CustomerContact aContact) {
+		return aContact.getFirstName()!= null && aContact.getLastName() != null;		
 	}
 	
 	/*
