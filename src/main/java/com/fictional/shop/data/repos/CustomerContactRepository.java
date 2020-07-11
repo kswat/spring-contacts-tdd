@@ -1,4 +1,4 @@
-package com.fictional.shop;
+package com.fictional.shop.data.repos;
 
 import org.springframework.data.repository.CrudRepository;
 

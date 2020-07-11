@@ -3,7 +3,7 @@ package com.fictional.shop.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fictional.shop.CustomerContactRepository;
+import com.fictional.shop.data.repos.CustomerContactRepository;
 import com.fictional.shop.domain.CustomerContact;
 
 
